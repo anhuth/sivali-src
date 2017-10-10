@@ -1,0 +1,36 @@
+
+<div class="grid-x grid-margin-x">
+  <div class="cell bottomMargin small-12 flex-child-grow large-1">
+    <div class="orbit" role="region" aria-label="Favorite Art Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+      <div class="orbit-wrapper">
+        <div class="orbit-controls">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        </div>
+        <ul class="orbit-container">
+          {{#each Karussellimages.image}}
+            <li class="orbit-slide">
+              <div class="small-12 cell" style="position: absolute; top: 20%; left:70%;">
+                  <h2>Sivali Tour - Home</h2>
+              </div>
+
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="{{root}}assets/img/{{image}}" alt="{{title}}">
+{{!--
+                <figcaption class="orbit-caption">{{title}}</figcaption>
+--}}
+              </figure>
+            </li>
+          {{/each}}
+        </ul>
+{{!--
+        <nav class="orbit-bullets">
+          {{#each products.product as |product runId|}}
+            <button class="is-active" data-slide="{{runId}}"><span class="show-for-sr">{{runId}}. slide details</span></button>
+          {{/each}}
+        </nav>
+--}}
+      </div>
+    </div>
+  </div>
+</div>

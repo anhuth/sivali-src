@@ -1,0 +1,25 @@
+
+<section id="{{title}}" data-magellan-target="{{title}}">
+  <div class="grid-x grid-margin-x flex-dir-row">
+    <div class="cell bottomMargin grid-x small-12 align-center">
+      <h5>Kulturreisen und Individualreisen nach Tibet - Tibet Reisen</h5>
+    </div>
+    <div class="cell grid-x small-12 large-8 align-center">
+      {{#each Tibettext.entries}}
+        <div class="cell small-12">
+          {{description}}<p></p>
+        </div>
+      {{/each}}
+    </div>
+    <div class="cell grid-x bottomMargin product-centered small-12 flex-child-grow large-4">
+      <img src="{{root}}assets/img/TB1335.jpg" />
+    </div>
+    <div class="cell grid-x small-12 align-center">
+      {{#each Tibettext.entries}}
+        <div class="cell small-12">
+          {{description}}<p></p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

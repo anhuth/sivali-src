@@ -1,0 +1,205 @@
+/*
+body {
+  background-color: #4a4a4a;
+}
+*/
+.thumbs {
+  justify-content: flex-start;
+}
+.call-thumb {
+    width: 6rem;
+}
+.modal-thumb img {
+  opacity: 0.9;
+  border: none;
+}
+.modal-thumb img:hover {
+  opacity: 1;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.tile-text {
+  position:absolute;
+  top:50%;
+  right:30%;
+  color:white;
+}
+
+/* Show titles on hover */
+.cell:hover .expand-column-content {
+  opacity: 1;
+}
+.expand-column-content {
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Product gallery */
+.product-centered {
+  justify-content: center;
+}
+
+hr {
+  max-width: 100%;
+}
+
+a {
+  color: $body-background;
+}
+button:hover {
+  color: $body-background;
+  background: $white;
+}
+
+.sim-thumb {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Hero */
+.hero{
+  background:url('../../images/bathroom-2460377_640.jpg');
+  background-size:cover;
+  box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.15);
+  height: 20rem;
+}
+.hero img{
+  width:100px;
+  height:100px;
+  border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px;
+}
+@media only screen and (min-width: 40.063em) {
+  .hero {
+    height: 30rem;
+  }
+  .hero img{
+    width:260px;
+    height:260px;
+    border-radius:130px;-webkit-border-radius:130px;-moz-border-radius:130px;
+  }
+  #roundImg{
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .hero {
+    height: 40rem;
+  }
+  .hero img{
+    width:380px;
+    height:380px;
+    border-radius:190px;-webkit-border-radius:190px;-moz-border-radius:190px;
+  }
+  #roundImg{
+    margin-top: 4rem;
+  }
+}
+/* Intro Text */
+.intro-text{
+  padding-top:6%;
+  padding-bottom:12%;
+  color:white;
+  text-align:right;
+}
+.intro-text p{
+  font-family:'Shadows Into Light',cursive;
+  font-size:15px;
+}
+@media only screen and (min-width: 40.063em) {
+  .intro-text p{
+    font-size:30px;
+    line-height:1.2;
+  }
+  section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .intro-text p{
+    font-size:34px;
+    line-height:1.6;
+  }
+  section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.boxShadow{
+  box-shadow: 6px 6px 4px $dark-gray;
+}
+
+.row-padding {
+   padding: 2rem;
+}
+
+.bottomMargin{
+  margin-bottom: 2em;
+}
+
+.card-divider {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Katalog Cards */
+.card-select {
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.card-select .card-divider {
+  background-color: $white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid #cacaca;
+}
+
+.card-select .button {
+  padding: 0.5rem;
+  background-color: #cacaca;
+}
+/*
+.card-select .button:after {
+  content: 'Select';
+}
+*/
+.card-select .button:hover {
+  background-color: $body-background;
+}
+
+.card-select .button:focus {
+  background-color: $body-background;
+}
+
+.card-select.is-selected {
+  border: 1px solid $body-background;
+  box-shadow: 0 0 10px #e6e6e6;
+  transition: all 0.5s ease;
+}
+
+.card-select.is-selected .button {
+  background-color: $body-background;
+}
+/*
+.card-select.is-selected .button:after {
+  content: 'Selected';
+}
+*/
+.hoverdark {
+  opacity: 1;
+  transition: transform 1s ease,opacity .35s ease;
+  z-index:0;
+}
+.hoverdark:hover {
+  transform: scale(1.15);
+  z-index:1;
+}

@@ -1,0 +1,62 @@
+<section id="{{sidebar.entries.2.section}}" data-magellan-target="{{sidebar.entries.2.section}}">
+
+  <div class="grid-x  grid-margin-x {{sidebar.entries.2.textalign}}">
+    <div class="cell small-12 large-{{sidebar.entries.2.textcells}}">
+      {{sidebar.entries.2.maintext}}
+    </div>
+
+    <div class="cell bottomMargin small-12 flex-child-grow large-1">
+<!--  thumbnails  -->
+      <div class="grid-x thumbs">
+        {{#each products.product}}
+          <div class="cell call-thumb text-center" data-id="{{MIGX_id}}">
+            <a data-open="revealKollektion"><img src="{{root}}assets/img/{{image}}" alt="{{title}}" /></a>
+            <div class="expand-column-content">{{title}}</div>
+          </div>
+        {{/each}}
+      </div>
+<!--  end thumbnails  -->
+    </div>
+  </div>
+  <div class="grid-x">
+    <div class="small-12 cell">
+      <hr>
+    </div>
+  </div>  
+</section>
+
+<!-- reveal window  -->
+
+<div id="revealKollektion" class="reveal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+    <div class="grid-x">
+      <div class="small-12 cell float-center">
+        <div class="card">
+
+          <img id="main-image" data-actualid="1"
+                        src=""
+                        alt="">             <!-- src and alt get overwritten by javascript! -->
+          <h4 id="main-title" class="float-center"></h4>
+          <span id="main-description">{{description}}</span>
+
+          <div class="card-divider">
+
+            <a class="reveal-previous button cardbutton"><span class="show-for-sr">Previous Image</span>&#9664;&#xFE0E;</a>
+            <div class="card-divider">
+              {{#each products.product}}
+                <a id="modalthumb{{MIGX_id}}" class="modal-thumb" data-id="{{MIGX_id}}" data-image="{{root}}assets/img/{{image}}" data-alt="{{title}}" data-description="{{description}}" >
+                  <img src="{{root}}assets/img/{{image}}" alt="{{title}}">
+                </a>
+              {{/each}}
+            </div>
+            <a class="reveal-next button cardbutton"><span class="show-for-sr">Next Image</span>&#9654;&#xFE0E;</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- end reveal window  -->

@@ -1,0 +1,52 @@
+/* App dashboard from Kevin Ball */
+
+$app-dashboard-top-nav-color: #e6e6e6;
+$app-dashboard-content-background-color: #4a4a4a;
+$app-dashboard-content-color: #fefefe;
+$app-dashboard-top-nav-height: 55px;
+
+.app-dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-dashboard-body {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.app-dashboard-top-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $app-dashboard-top-nav-color;
+  height: $app-dashboard-top-nav-height;
+  width: 100%;
+  flex: 0 0 $app-dashboard-top-nav-height;
+}
+
+.app-dashboard-top-nav-bar .menu-icon {
+  vertical-align: text-bottom;
+}
+/*
+.app-dashboard-logo {
+  color: $app-dashboard-content-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+*/
+
+.app-dashboard-top-bar-actions {
+  align-items: center;
+  display: flex;
+}
+
+.app-dashboard-body-content {
+  overflow-y: auto;
+  flex: 1 1 0;
+  padding-bottom: 20px;
+  background-color: $app-dashboard-content-background-color;
+  color: $app-dashboard-content-color;
+}

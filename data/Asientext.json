@@ -1,0 +1,41 @@
+{
+  "entries":
+  [
+    {
+      "MIGX_id":"1",
+      "title":"Reisen",
+      "description":"Reisen nach Asien, als Individualreisen oder als Gruppenreisen mit den Themen Kulturreisen Asien, Begegnungsreisen, Erlebnisreisen, ethnologische Reisen und Trekkingreisen.",
+      "image":""
+    },
+    {
+      "MIGX_id":"2",
+      "title":"Tätig",
+      "description":"Tätig und erfahren sind wir in Asien speziell in Indien, Myanmar, Sri Lanka, Nepal, Bhutan, Tibet, China, Korea, Thailand, Laos, Kambodscha, Vietnam und Indonesien.",
+      "image":""
+    },
+    {
+      "MIGX_id":"3",
+      "title":"fremdeWelt",
+      "description":"Eine fremde Welt von innen erleben. Die Grenzen unserer Weltsicht erweitern. Kulturelle Grenzen erfahren und überschreiten.",
+      "image":""
+    },
+    {
+      "MIGX_id":"4",
+      "title":"Abenteuer",
+      "description":"Abenteuer hautnah erleben. Solche Erfahrungen verändern den Alltag. Um solche Erfahrungen geht es auf unseren Reisen.",
+      "image":""
+    },
+    {
+      "MIGX_id":"5",
+      "title":"Kulturen",
+      "description":"Sie erkunden Asiens vielfältige Kulturen und haben, neben der komfortablen Variante, auch die Möglichkeit, auf landesübliche Art abseits ausgetretener Pfade, Reisen nach China, Indien, Indonesien, Kambodscha, Laos, Myanmar, Nepal, Tibet oder Vietnam zu genießen.",
+      "image":""
+    },
+    {
+      "MIGX_id":"6",
+      "title":"Regionen",
+      "description":"Sie trecken in den schönsten und abgelegensten Regionen des Himalaya. Sie entdecken die wirklich verzauberten Orte Asiens und ihre Menschen. Und ein alter Asienkenner kümmert sich um die Details.",
+      "image":""
+    }
+  ]
+}

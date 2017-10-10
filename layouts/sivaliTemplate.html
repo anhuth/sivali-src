@@ -1,0 +1,44 @@
+{{!-- This is a handlebar comment --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivali Tours</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
+  </head>
+  <body>
+
+    <div class="app-dashboard shrink-medium">
+      <div class="grid-x app-dashboard-top-nav-bar">
+        <div class="cell medium-2">
+{{!--       <a>Sivali Tour</a> --}}
+            <a href="index.html"><img src="{{root}}assets/img/sivali_logo_150x84.jpg" alt="Sivali Tours"></a>
+        </div>
+
+        <div class="cell shrink app-dashboard-top-bar-actions">
+          <div class="hover-underline-menu" data-menu-underline-from-center>
+            <ul class="menu">
+              {{#each pagenames.navpage}}
+                {{> topNav_tpl}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="app-dashboard-body off-canvas-wrapper">
+
+
+        <div class="app-dashboard-body-content off-canvas-content sections" data-off-canvas-content>
+          {{> body}}
+        </div>
+
+      </div>
+    </div>
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

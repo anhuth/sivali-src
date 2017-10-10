@@ -1,0 +1,30 @@
+{
+  "entries":
+  [
+    { "section": "30 Jahre Stühle",
+      "maintext": "",
+      "textalign": "flex-dir-row",
+      "textcells": "0"
+    },
+    { "section": "Über",
+      "maintext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit ligula eget est feugiat viverra. Duis a arcu laoreet, rhoncus libero imperdiet, placerat velit. Vestibulum euismod mi et ornare sodales.",
+      "textalign": "flex-dir-row-reverse",
+      "textcells": "4"
+    },
+    { "section": "Reisebericht",
+      "maintext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit ligula eget est feugiat viverra. Duis a arcu laoreet, rhoncus libero imperdiet, placerat velit. Vestibulum euismod mi et ornare sodales.",
+      "textalign": "flex-dir-row",
+      "textcells": "6"
+    },
+    { "section": "Baden",
+      "maintext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit ligula eget est feugiat viverra. Duis a arcu laoreet, rhoncus libero imperdiet, placerat velit. Vestibulum euismod mi et ornare sodales.",
+      "textalign": "flex-dir-row",
+      "textcells": "4"
+    },
+    { "section": "Reiseländer",
+      "maintext": "",
+      "textalign": "flex-dir-row",
+      "textcells": "0"
+    }
+  ]
+}

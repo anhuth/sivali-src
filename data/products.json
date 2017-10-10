@@ -1,0 +1,35 @@
+{
+  "product":
+  [
+    {
+      "MIGX_id":"1",
+      "title":"Rote Stühle",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus. Nullam at nisi sed mi congue vestibulum. Donec efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.",
+      "image":"table-384802_640.jpg"
+    },
+    {
+      "MIGX_id":"2",
+      "title":"Blaue Stühle",
+      "description":"Vivamus nec scelerisque orci, vel fringilla nisi. Sed dictum, leo in consectetur porttitor, quam nibh aliquet nisi, in pulvinar sapien ante id dui. Aliquam massa nisl, auctor eget nisl in, faucibus gravida lectus. Nullam mattis orci at turpis finibus egestas. Nam vitae lorem accumsan, tempus lectus vitae, rutrum diam. Integer pulvinar placerat magna aliquam scelerisque.",
+      "image":"patio-449432_640.jpg"
+    },
+    {
+      "MIGX_id":"3",
+      "title":"Apfelbäume",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image":"fruit-1379911_640.jpg"
+    },
+    {
+      "MIGX_id":"4",
+      "title":"Apfelbäume",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image":"fruit-1379911_640.jpg"
+    },
+    {
+      "MIGX_id":"5",
+      "title":"Rote Stühle",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus. Nullam at nisi sed mi congue vestibulum. Donec efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.",
+      "image":"table-384802_640.jpg"
+    }
+  ]
+}

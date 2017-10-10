@@ -1,0 +1,41 @@
+{
+  "entries":
+  [
+    {
+      "MIGX_id":"1",
+      "title":"Reisen",
+      "description":"Wir realisieren für Sie Kulturreisen in Tibet, Individualreisen nach Tibet, Pilgerreisen in Tibet, Entdeckungsreisen, Jeep Safaris und Trekkingreisen in Tibet. Hier finden Sie eine Auswahl von Reisetipps Tibet, einige Ideen zu Reiserouten, die auch als individuelle Tibetreisen kombinierbar sind.",
+      "image":""
+    },
+    {
+      "MIGX_id":"2",
+      "title":"Tätig",
+      "description":"Einige Vorschläge: Städtereisen Lhasa, 3700m:",
+      "image":""
+    },
+    {
+      "MIGX_id":"3",
+      "title":"fremdeWelt",
+      "description":"Besuch der heiligen Stätten Jorkhang und Potala, Wandeln im Pilgerstrom auf dem Barkhor oder um den Potala, Erkunden der Klöster Sera, Drepung und Ganden. Übernachtungsmöglichkeiten vom familiären Guesthouse bis zum atmosphärischen, komfortablen Hotel. Die Anreise ist per Flug über die großen Städte Chinas oder über Kathmandu möglich, auch kombinierbar mit Bahn von/nach Chengdu oder Peking.",
+      "image":""
+    },
+    {
+      "MIGX_id":"4",
+      "title":"Abenteuer",
+      "description":"Ausflüge mit Jeep von Lhasa: Geheimnisvolle Städte, geschichtsträchtige Klöster und grandiose Natur.",
+      "image":""
+    },
+    {
+      "MIGX_id":"5",
+      "title":"Kulturen",
+      "description":"02 - 03 Tage - Ausflug nach Norden zum Namtso Lake und zur Reting Gompa.",
+      "image":""
+    },
+    {
+      "MIGX_id":"6",
+      "title":"Regionen",
+      "description":"02 - 03 Tage - Ausflug zum Kloster Samye, dem ältesten Tibets, nach Tsetang und ins Yarlung Tal, Tibets Tal der Könige.",
+      "image":""
+    }
+  ]
+}

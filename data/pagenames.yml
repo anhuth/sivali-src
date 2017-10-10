@@ -1,0 +1,33 @@
+navpage:
+  -
+    name: Reiseländer
+    url:  Asien.html
+    idx: 1
+  -
+    name: Maßgeschneidert
+    url:  Asien.html
+    idx: 2
+  -
+    name: Wer ist Sivali
+    url:  Asien.html
+    idx: 3
+  -
+    name: Kontakt
+    url:  Asien.html
+    idx: 4
+  -
+    name: Referenzen
+    url:  Asien.html
+    idx: 5
+  -
+    name: Home
+    url:  index.html
+    idx: 6
+  -
+    name: Anfang
+    url:  Asien.html
+    idx: 7
+  -
+    name: Links
+    url:  Asien.html
+    idx: 8
