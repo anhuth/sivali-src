@@ -1,0 +1,306 @@
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	contentKarussell
+<section id="[[+section]]" data-magellan-target="[[+section]]">
+ <div class="grid-x">
+   <div class="small-12 cell">
+     <hr>
+     <h3>[[+section]]</h3><br/>
+   </div>
+ </div>
+
+ <div class="grid-x grid-margin-x [[+textalign:select=`Left=flex-dir-row&Right=flex-dir-row-reverse`]]">
+   <div class="cell small-12 [[+textcells:select=`25%=large-3&33%=large-4&50%=large-6&66%=large-8&75%=large-9&100%=large-12`]]">
+     [[+showtext:is=`Yes`:then=`[[+maintext]]`:else=``]]
+   </div>
+
+   <div class="cell bottomMargin small-12 flex-child-grow large-1">
+     <div class="orbit" role="region" aria-label="Favorite Art Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+       <div class="orbit-wrapper">
+         <div class="orbit-controls">
+           <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+           <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+         </div>
+         <ul class="orbit-container">
+             [[getImageList?
+               &value=`[[+products]]`
+               &tpl=`imagesKarussell_tpl`]]
+         </ul>
+
+         <nav class="orbit-bullets">
+             [[getImageList?
+               &value=`[[+products]]`
+               &tpl=`thumbsKarussell_tpl`]]
+         </nav>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+[[-  Print out json array, c.f. [property.value] !!
+   [[getImageList?
+               &value=`[[+products]]`
+               &toJsonPlaceholder=`jsonoutput`]]
+   [[getImageList?
+               &value=`[[+jsonoutput]]`]]
+]]
+
+</section>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	imagesKarussell_tpl
+  <li class="orbit-slide">
+    <figure class="orbit-figure">
+      <img class="orbit-image" src="[[+image:add_mediasourcepath=`2`]]" alt="[[+title]]">
+      [[+title:is=``:then=``:else=`<figcaption class="orbit-caption">[[+title]]</figcaption>`]]
+    </figure>
+  </li>
+
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	thumbsKarussell_tpl
+ <button [[+idx:is=`1`:then=`class="is-active"`:else=``]] data-slide="[[+idx:decr]]"><span class="show-for-sr">[[+idx]]. slide details.</span></button>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	cardsCallKatalog_tpl 	<div class="cell call-thumb text-center" data-id="[[+idx]]">
+ <div class="card card-select" data-cardSelect>
+   <div class="card-divider">
+     [[+title]]
+   </div>
+   <img src="[[+image:add_mediasourcepath=`2`]]" alt="[[+title]]" />
+   <div class="card-section show-for-medium">
+     [[+description:ellipsis=`100`]]
+   </div>
+   <a data-open="reveal[[+section:strtoalphanum]]"><button class="button" data-cardSelectButton>mehr...</button></a>
+ </div>
+</div>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	cardsKatalog_tpl
+
+    <a id="modalthumb[[+idx]]" class="modal-thumb" data-id="[[+idx]]" data-image="[[+image:add_mediasourcepath=`2`]]" data-alt="[[+title]]" data-description="[[+description]]" ><img src="[[+image:add_mediasourcepath=`2`]]" alt="[[+title]]"></a>
+
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	contentKatalog 	<section id="[[+section]]" data-magellan-target="[[+section]]">
+ <div class="grid-x">
+   <div class="small-12 cell">
+     <hr>
+     <h3>[[+section]]</h3><br/>
+   </div>
+ </div>
+
+ <div class="grid-x grid-margin-x [[+textalign:select=`Left=flex-dir-row&Right=flex-dir-row-reverse`]]">
+
+   <div class="cell small-12 [[+textcells:select=`25%=large-3&33%=large-4&50%=large-6&66%=large-8&75%=large-9&100%=large-12`]]">
+     [[+showtext:is=`Yes`:then=`[[+maintext]]`:else=``]]
+   </div>
+
+   <div class="cell bottomMargin small-12 flex-child-grow large-1">
+<!--  cards  -->
+     <div class="grid-x grid-padding-x small-up-2 medium-up-3 large-up-4">
+         [[getImageList?
+           &value=`[[+products]]`
+           &tpl=`cardsCallKatalog_tpl`]]
+     </div>
+<!--  end cards  -->
+   </div>
+ </div>
+</section>
+
+<!-- reveal window  -->
+
+ <div id="reveal[[+section:strtoalphanum]]" class="reveal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+
+       <div class="card">
+
+          <img id="main-image" data-actualid="1"
+                       src=""
+                       alt="">             <!-- src and alt get overwritten by javascript! -->
+
+         <div class="card-divider">
+           <h4 id="main-title"></h4>
+
+           <!-- modalthumbs are invisible, but necessary to transport info about actually clicked card! -->
+           <div class="card-divider" style="display: none;">
+                 [[getImageList?
+                     &value=`[[+products]]`
+                     &tpl=`cardsKatalog_tpl`]]
+           </div>
+         </div>
+         <span id="main-description">[[+description]]</span>
+
+     </div>
+     <button class="close-button" data-close aria-label="Close reveal" type="button">
+     <span aria-hidden="true">&times;</span>
+     </button>
+ </div>
+
+<!-- end reveal window  -->
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	contentKollektion 	<section id="[[+section]]" data-magellan-target="[[+section]]">
+ <div class="grid-x">
+   <div class="small-12 cell">
+     <hr>
+     <h3>[[+section]]</h3><br/>
+   </div>
+ </div>
+
+ <div class="grid-x grid-margin-x [[+textalign:select=`Left=flex-dir-row&Right=flex-dir-row-reverse`]]">
+   <div class="cell small-12 [[+textcells:select=`25%=large-3&33%=large-4&50%=large-6&66%=large-8&75%=large-9&100%=large-12`]]">
+     [[+showtext:is=`Yes`:then=`[[+maintext]]`:else=``]]
+   </div>
+
+   <div class="cell bottomMargin small-12 flex-child-grow large-1">
+<!--  thumbnails  -->
+     <div class="grid-x thumbs">
+       [[getImageList?
+           &value=`[[+products]]`
+           &tpl=`thumbsCallKollektion_tpl`]]
+     </div>
+<!--  end thumbnails  -->
+   </div>
+ </div>
+</section>
+
+<!-- reveal window  -->
+
+<div id="reveal[[+section:strtoalphanum]]" class="reveal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+   <div class="grid-x">
+     <div class="small-12 cell float-center">
+       <div class="card">
+
+         <img id="main-image" data-actualid="1"
+                       src=""
+                       alt="">             <!-- src and alt get overwritten by javascript! -->
+         <h4 id="main-title" class="float-center"></h4>
+         <span id="main-description">[[+description]]</span>
+
+         <div class="card-divider">
+
+             <a class="reveal-previous button cardbutton"><span class="show-for-sr">Previous Image</span>&#9664;&#xFE0E;</a>
+
+           <div class="card-divider">
+                 [[getImageList?
+                     &value=`[[+products]]`
+                     &tpl=`thumbsKollektion_tpl`]]
+           </div>
+
+             <a class="reveal-next button cardbutton"><span class="show-for-sr">Next Image</span>&#9654;&#xFE0E;</a>
+
+         </div>
+       </div>
+     </div>
+   </div>
+ <button class="close-button" data-close aria-label="Close reveal" type="button">
+   <span aria-hidden="true">&times;</span>
+ </button>
+</div>
+
+<!-- end reveal window  -->
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	thumbsCallKollektion_tpl 	<div class="cell call-thumb text-center" data-id="[[+idx]]">
+    <a data-open="reveal[[+section:strtoalphanum]]"><img src="[[+image:add_mediasourcepath=`2`:pthumb=`w=80&h=100&zc=1`]]" alt="[[+title]]" /></a>
+    <div class="expand-column-content">[[+title]]</div>
+</div>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	thumbsKollektion_tpl
+
+    <a id="modalthumb[[+idx]]" class="modal-thumb" data-id="[[+idx]]" data-image="[[+image:add_mediasourcepath=`2`:pthumb=`w=450&h=640&zc=1`]]" data-alt="[[+title]]" data-description="[[+description]]" ><img src="[[+image:add_mediasourcepath=`2`:pthumb=`w=60&h=60&zc=1`]]" alt="[[+title]]"></a>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	contentProduktgalerie 	<section id="[[+section]]" data-magellan-target="[[+section]]">
+ <div class="grid-x">
+   <div class="small-12 cell">
+     <hr>
+     <h3>[[+section]]</h3><br/>
+   </div>
+ </div>
+
+
+ <div class="grid-x grid-margin-x [[+textalign:select=`Left=flex-dir-row&Right=flex-dir-row-reverse`]]">
+   <div class="cell small-12 [[+textcells:select=`25%=large-3&33%=large-4&50%=large-6&66%=large-8&75%=large-9&100%=large-12`]]">
+     [[+showtext:is=`Yes`:then=`[[+maintext]]`:else=``]]
+   </div>
+
+   <div class="cell bottomMargin grid-x product-centered small-12 flex-child-grow large-1">
+     <div>
+
+       <img id="main-product-image" data-actualid="1" src="[[getImageList?
+                         &value=`[[+products]]`
+                         &limit=`1`
+                         &tpl=`imageMediaPath_tpl`]]" alt="Erstes Bild">
+
+       <h4 id="main-product-title" class="text-center">[[getImageList?
+                         &value=`[[+products]]`
+                         &limit=`1`
+                         &tpl=`@CODE:[[+title]]`]]</h4>
+
+       <ul class="menu product-centered">
+         [[getImageList?
+           &value=`[[+products]]`
+           &tpl=`thumbsProduktgalerie_tpl`]]
+       </ul>
+     </div>
+   </div>
+ </div>
+</section>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	thumbsProduktgalerie_tpl 	  <li>
+    <a class="sim-thumb" id="img[[+idx]]" data-id="[[+idx]]" data-image="[[+image:add_mediasourcepath=`2`]]"><img src="[[+image:add_mediasourcepath=`2`:pthumb=`w=60&h=60&zc=1`]]" alt="[[+title]]"></a>
+  </li>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	contentHero
+     <section class="hero" id="Hero" data-magellan-target="Hero" style="background-image:url([[*HeroImage]]);[[*HeroImage:isequalto=``:then=`height: 8rem;`:else=``]]">
+         <div class="small-12 cell intro-text">
+           <div class="small-7 small-offset-5 text-center columns">
+             <p>Artvento  &nbsp;&nbsp; [[*pagetitle]]</p>
+           </div>
+         </div>
+     </section>     <!--  hero  -->
+
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	contentTextundEinzelbild 	
+<section id="[[+section]]" data-magellan-target="[[+section]]">
+ <div class="grid-x">
+   <div class="small-12 cell">
+     [[+visible:is=`Yes`:then=`<hr><h3>[[+section]]</h3><br />`:else=``]]
+   </div>
+ </div>
+
+ <div class="grid-x grid-margin-x [[+textalign:select=`Left=flex-dir-row&Right=flex-dir-row-reverse`]]">
+   <div class="cell small-12 [[+textcells:select=`25%=large-3&33%=large-4&50%=large-6&66%=large-8&75%=large-9&100%=large-12`]]">
+     [[+showtext:is=`Yes`:then=`[[+maintext]]`:else=``]]
+   </div>
+
+   <div class="cell bottomMargin grid-x product-centered small-12 flex-child-grow large-1">
+     <div>
+       <img id="main-product-image" data-actualid="1" src="[[getImageList?
+                         &value=`[[+products]]`
+                         &limit=`1`
+                         &tpl=`imageMediaPath_tpl`]]">
+
+     </div>
+   </div>
+
+ </div>
+</section>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	section_tpl
+   [[$content[[+display]]? &section=`[[+section]]`]]
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	sidebar_tpl
+         <li><a href="[[~[[*id]]]]#[[+section]]">
+           <i class="fa" style="font-size:1.5rem"></i><span class="app-dashboard-sidebar-text"> [[+section]]</span>
+         </a></li>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	topNav_tpl
+<li [[+id:is=`[[*id]]`:then=`class="is-selected"`:else=``]]><a href="[[~[[+id]]]]"><i class="fa [[+tv.selectSidebarIcon]]" aria-hidden="true"></i> [[+pagetitle]]</a></li>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	contentMauerwerk 	<section id="[[+section]]" data-magellan-target="[[+section]]">
+ <div class="grid-x">
+   <div class="small-12 cell">
+     <hr>
+     <h3>[[+section]]</h3><br/>
+   </div>
+ </div>
+
+ <div class="grid-x grid-margin-x [[+textalign:select=`Left=flex-dir-row&Right=flex-dir-row-reverse`]]">
+   <div class="cell small-12 [[+textcells:select=`25%=large-3&33%=large-4&50%=large-6&66%=large-8&75%=large-9&100%=large-12`]]">
+     [[+showtext:is=`Yes`:then=`[[+maintext]]`:else=``]]
+   </div>
+
+   <div class="cell bottomMargin small-12 flex-child-grow large-1">
+    <div class="masonry-css">
+         [[getImageList?
+           &value=`[[+products]]`
+           &tpl=`masonryMauerwerk_tpl`]]
+     </div>
+   </div>
+ </div>
+</section>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	masonryMauerwerk_tpl
+   <div class="masonry-css-item">
+     [[+image:notequalto=``:then=`<img src="[[+image:add_mediasourcepath=`2`]]">`]]
+
+     [[+description:notequalto=``:then=`<div>[[+description]]</div>`]]
+   </div>
+	Bearbeiten Bearbeiten 	Kopieren Kopieren 	Löschen Löschen 	imageMediaPath_tpl
+[[+image:add_mediasourcepath=`2`]]
