@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sivali Tours</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   </head>
   <body>
 
@@ -21,7 +21,28 @@
 
         <div class="cell shrink app-dashboard-top-bar-actions">
           <div class="hover-underline-menu" data-menu-underline-from-center>
-            <ul class="menu">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="Asien.html">REISELÄNDER</a>
+                <ul class="menu">
+                  <li><a href="Tibet.html">Tibet</a></li>
+                  <li><a href="Tibet.html">Indien</a></li>
+                  <li><a href="Tibet.html">Nepal</a></li>
+                  <li><a href="Tibet.html">Myanmar</a></li>
+                  <li><a href="Tibet.html">Laos</a></li>
+                  <li><a href="Tibet.html">China</a></li>
+                  <li><a href="Tibet.html">Vietnam</a></li>
+                  <li><a href="Tibet.html">Kambodscha</a></li>
+                  <li><a href="Tibet.html">Indonesien</a></li>
+                  <li><a href="Tibet.html">Bhutan</a></li>
+                </ul>
+              </li>
+              <li><a href="Asien.html">MASSGESCHNEIDERT</a>
+                <ul class="menu">
+                  <li><a href="#">Individualreisen</a></li>
+                  <li><a href="#">Gruppenreisen</a></li>
+                </ul>
+              </li>
               {{#each pagenames.navpage}}
                 {{> topNav_tpl}}
               {{/each}}

@@ -194,12 +194,12 @@ button:hover {
   content: 'Selected';
 }
 */
-.hoverdark {
+.hovermove {
   opacity: 1;
   transition: transform 1s ease,opacity .35s ease;
   z-index:0;
 }
-.hoverdark:hover {
+.hovermove:hover {
   transform: scale(1.15);
   z-index:1;
 }

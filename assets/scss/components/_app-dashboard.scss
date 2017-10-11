@@ -24,6 +24,8 @@ $app-dashboard-top-nav-height: 55px;
   height: $app-dashboard-top-nav-height;
   width: 100%;
   flex: 0 0 $app-dashboard-top-nav-height;
+  font-family: 'Dosis', sans-serif;
+  font-size: large;
 }
 
 .app-dashboard-top-nav-bar .menu-icon {
