@@ -1,20 +1,33 @@
 
-<section id="{{sidebar.entries.4.section}}" data-magellan-target="{{sidebar.entries.4.section}}">
+<section id="{{sidebar.entries.1.section}}" data-magellan-target="{{sidebar.entries.1.section}}">
 
-  <div class="grid-x grid-margin-x {{sidebar.entries.4.textalign}}">
-    <div class="cell small-12 large-{{sidebar.entries.4.textcells}}">
-      {{sidebar.entries.4.maintext}}
+  <div class="grid-x grid-margin-x {{sidebar.entries.1.textalign}}">
+    <div class="cell small-12 large-{{sidebar.entries.1.textcells}}">
+      {{sidebar.entries.1.maintext}}
     </div>
 
-    <div class="cell bottomMargin small-12 {{sidebar.entries.4.imagecells}}">
-      <div class="grid-x small-up-2 medium-up-3 large-up-5 thumbs">
+    <div class="cell bottomMargin grid-x align-spaced small-12 flex-child-grow large-1">
+      <div class="cell grid-x align-center small-12 large-{{sidebar.entries.1.imagecells}}">
+        <div class="grid-x flex-child-grow small-up-2 medium-up-3 large-up-5 thumbs">
 
-        {{#each Kacheldata.entries}}
-          <div class="cell call-thumb position-relative hovermove">
-            <a href="Tibet.html"><img src="{{root}}assets/img/{{image}}" alt="{{title}}" />
-            <h4 class="tile-text">{{title}}</h4></a>
+          <div class="cell tile-thumb show-for-medium-only">
+            <a href="Tibet.html"><img src="{{root}}assets/img/sivalilogo.png" alt="Sivali-Logo" />
+            </a>
           </div>
-        {{/each}}
+
+          {{#each Kacheldata.entries}}
+            <div class="cell tile-thumb hoverscale" style ="background-image: url('{{root}}assets/img/{{image}}');background-size: cover;">
+              <a href="Tibet.html">
+              <h4 class="tile-text">{{title}}</h4></a>
+            </div>
+          {{/each}}
+
+          <div class="cell tile-thumb show-for-medium-only">
+            <a href="Tibet.html"><img src="{{root}}assets/img/sivalilogo.png" alt="Sivali-Logo" />
+            </a>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>

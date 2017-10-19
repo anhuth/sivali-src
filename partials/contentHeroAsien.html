@@ -10,7 +10,7 @@
         <ul class="orbit-container" style="position: relative;">
           {{#each Karussellimages1.image}}
             <li class="orbit-slide">
-              <div class="small-12 cell" style="position: absolute; top: 20%; left:60%;">
+              <div class="small-12 cell intro-text">
                   <h2>Sivali Tour - Reiseländer</h2>
               </div>
 
@@ -20,6 +20,17 @@
             </li>
           {{/each}}
         </ul>
+
+        <nav class="orbit-bullets">
+          {{#each Karussellimages1.image as |image runId|}}
+            {{#if runId}}
+              <button data-slide="{{runId}}"><span class="show-for-sr">{{runId}}. slide details</span></button>
+            {{else}}   {{!-- Set first one active --}}
+              <button class="is-active" data-slide="{{runId}}"><span class="show-for-sr">{{runId}}. slide details</span></button>
+            {{/if}}
+          {{/each}}
+        </nav>
+
       </div>
     </div>
   </div>
