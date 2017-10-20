@@ -53,6 +53,7 @@ body {
 
 hr {
   max-width: 100%;
+  border-color: orange;
 }
 
 a {
@@ -143,6 +144,7 @@ button:hover {
   position: absolute;
   top: 20%;
   left:20%;
+  color: $white;
 }
 @media only screen and (min-width: 64.063em) {
   .intro-text{
@@ -230,7 +232,7 @@ section {
 /* Clean Hero Slider */
 .orbit-controls {
    button {
-     background: $dark-gray;
+     background: orange;
      padding: 1rem 0.5rem;
 
      &:hover {
@@ -270,7 +272,30 @@ section {
     background-color: $white;
 
     &.is-active {
-      background-color: $dark-gray;
+      background-color: orange;
     }
   }
+}
+
+/* SivaliNew Template */
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+.top-bar {
+  background: $light-gray;
+  flex: 0 0 55px;
+  font-family: 'Dosis', sans-serif;
+  font-size: large;
+  width: 100%;
 }

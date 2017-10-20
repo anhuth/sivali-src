@@ -19,6 +19,10 @@
             <a href="index.html"><img src="{{root}}assets/img/sivali_logo_150x84.jpg" alt="Sivali Tours"></a>
         </div>
 
+        <div class="cell medium-2">
+          <button data-toggle="app-dashboard-top-bar-actions" class="menu-icon hide-for-medium"></button>
+        </div>
+
         <div class="cell shrink app-dashboard-top-bar-actions">
           <div class="hover-underline-menu" data-menu-underline-from-center>
             <ul class="dropdown menu" data-dropdown-menu>
@@ -53,11 +57,8 @@
         </div>
       </div>
 
-      <div class="app-dashboard-body off-canvas-wrapper">
-        <div class="app-dashboard-body-content off-canvas-content sections" data-off-canvas-content>
-          {{> body}}
-        </div>
-
+      <div class="app-dashboard-body-content off-canvas-content sections" data-off-canvas-content>
+        {{> body}}
       </div>
     </div>
 

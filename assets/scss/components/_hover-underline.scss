@@ -31,6 +31,12 @@
   transition: all 0.5s ease;
 }
 
+/* Anneli correction? Otherwise half underline is always 
+   visible with SivaliNew template (not sticky for small!) */
+.dropdown.menu.vertical > li > a::after{
+  right: 50%;
+}
+
 .hover-underline-menu .menu .underline-from-center:hover::after {
   left: 0;
   right: 0;
