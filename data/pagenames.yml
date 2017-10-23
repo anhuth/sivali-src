@@ -9,7 +9,7 @@ navpage:
     idx: 4
   -
     name: REFERENZEN
-    url:  Asien.html
+    url:  ref.html
     idx: 5
   -
     name: HOME

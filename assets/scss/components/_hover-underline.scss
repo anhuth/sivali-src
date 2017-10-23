@@ -25,16 +25,19 @@
   content: "";
   position: absolute;
   top: calc(100% - 0.125rem);
-  border-bottom: 0.125rem solid #fefefe;
+  border-bottom: 0.125rem solid orange;
   left: 50%;
   right: 50%;
   transition: all 0.5s ease;
 }
 
-/* Anneli correction? Otherwise half underline is always 
-   visible with SivaliNew template (not sticky for small!) */
+/* Anneli correction? Otherwise half underline is always visible. */
 .dropdown.menu.vertical > li > a::after{
   right: 50%;
+}
+/* Anneli little triangle color for submenues */
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after, .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after{
+  border-top-color: orange;
 }
 
 .hover-underline-menu .menu .underline-from-center:hover::after {
