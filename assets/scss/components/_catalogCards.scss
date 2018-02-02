@@ -1,0 +1,60 @@
+/* Katalog Cards */
+.card {
+  background-color: $dark-background;
+  border: 1px solid orange;
+}
+
+.card-divider {
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-background;
+}
+
+.reveal {
+  background-color: $body-background;
+}
+
+.card-select {
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.card-select .card-divider {
+  background-color: $dark-background;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card-select .button {
+  padding: 0.5rem;
+  background-color: orange;
+}
+/*
+.card-select .button:after {
+  content: 'Select';
+}
+*/
+.card-select .button:hover {
+  background-color: $white;
+  color: $black;
+}
+/*
+.card-select .button:focus {
+  background-color: $body-background;
+}
+
+.card-select.is-selected {
+  border: 1px solid $body-background;
+  box-shadow: 0 0 10px #e6e6e6;
+  transition: all 0.5s ease;
+}
+
+.card-select.is-selected .button {
+  background-color: $body-background;
+}
+
+.card-select.is-selected .button:after {
+  content: 'Selected';
+}
+*/

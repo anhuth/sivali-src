@@ -1,9 +1,11 @@
 ---
 layout: sivaliNew
-idxx: 2
 ---
 {{> contentHeroAsien}}
 {{> contentHr}}
+{{#with sidebar.entries.[0]}}
+  {{>upperPart}}
+{{/with}}
 {{> contentKacheln}}
 {{> contentHr}}
 {{> contentAsien}}

@@ -1,0 +1,35 @@
+---
+layout: sivaliNew
+---
+{{> contentHr}}
+<section>
+  <div class="grid-x">
+    <div class="small-12 cell">
+      <h5>Auf dieser Seite zeige ich beispielhaft verschiedene Darstellungsarten, die demonstrieren sollen, wie Sie Ihre Seite später selbst gestalten können. Dabei lassen sich Bilder von Produkten (Reisen) kombinieren mit zugehörigen Bildtexten und einem übergreifenden Haupttext. Die verschiedenen Darstellungen (Katalog, Karussell, Mauerwerk, Einzelbild, Produktgalerie) präsentieren identische Produktinhalte auf unterschiedliche Art und Weise.</h5>
+      <h5>Darstellungsart, sowie Haupttext, Bilder und Bildtexte wird man später in der MODX-Version grafisch im Backend definieren können. Alle Texte lassen sich mit Farben, Fontgrößen, Unterstreichungen, Umrandungen etc. individuell formatieren. Leider lässt sich das in dieser Vorab-Version nicht demonstrieren.</h5>
+    </div>
+  </div>
+</section>
+{{> contentHr}}
+{{> contentKatalog}}
+{{> contentHr}}
+{{> contentKarussell}}
+{{> contentHr}}
+{{> contentMauerwerk}}
+{{> contentHr}}
+{{> contentEinzelbild}}
+{{> contentHr}}
+{{> contentProduktgalerie}}
+{{> contentHr}}
+{{#with sidebar.entries.[6]}}
+  {{>upperPart}}
+{{/with}}
+{{> contentKacheln}}
+{{> contentHr}}
+{{#with sidebar.entries.[7]}}
+  {{>upperPart}}
+{{/with}}
+    </div>
+  </div>
+</section>
+{{> contentHr}}

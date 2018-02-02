@@ -3,6 +3,7 @@ body {
   background-color: #4a4a4a;
 }
 */
+$prototype-gray: #4a4a4a;
 .thumbs {
   justify-content: flex-start;
 }
@@ -51,16 +52,22 @@ body {
   justify-content: center;
 }
 
+#main-product-image {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 hr {
   max-width: 100%;
   border-color: orange;
 }
 
 a {
-  color: $body-background;
+  color: $prototype-gray;
 }
 button:hover {
-  color: $body-background;
+  color: $prototype-gray;
   background: $white;
 }
 
@@ -153,8 +160,8 @@ button:hover {
   }
 }
 section {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .boxShadow{
@@ -169,56 +176,6 @@ section {
   margin-bottom: 2em;
 }
 
-.card-divider {
-  align-items: center;
-  justify-content: center;
-}
-
-/* Katalog Cards */
-.card-select {
-  text-align: center;
-  transition: all 0.5s ease;
-}
-
-.card-select .card-divider {
-  background-color: $white;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-transform: uppercase;
-  border: 1px solid #cacaca;
-}
-
-.card-select .button {
-  padding: 0.5rem;
-  background-color: #cacaca;
-}
-/*
-.card-select .button:after {
-  content: 'Select';
-}
-*/
-.card-select .button:hover {
-  background-color: $body-background;
-}
-
-.card-select .button:focus {
-  background-color: $body-background;
-}
-
-.card-select.is-selected {
-  border: 1px solid $body-background;
-  box-shadow: 0 0 10px #e6e6e6;
-  transition: all 0.5s ease;
-}
-
-.card-select.is-selected .button {
-  background-color: $body-background;
-}
-/*
-.card-select.is-selected .button:after {
-  content: 'Selected';
-}
-*/
 /* Sivali tile animation on hover*/
 .hoverscale {
   opacity: 1;

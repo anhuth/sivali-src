@@ -36,7 +36,7 @@
     &::before {
       content: "“";
       font-size: 5rem;
-      color: lighten($black, 80%);
+      color: orange;
       position: absolute;
       top: -2.5rem;
       left: -1.5rem;
@@ -45,7 +45,7 @@
     &::after {
       content: "”";
       font-size: 5rem;
-      color: lighten($black, 80%);
+      color: orange;
       position: absolute;
       bottom: -4rem;
       right: -.5rem;

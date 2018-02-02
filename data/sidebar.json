@@ -6,6 +6,48 @@
       "textalign": "flex-dir-row",
       "textcells": "0",
       "imagecells": "12"
+    },
+    { "section": "Katalog",
+      "maintext": "Haupttext: Dieser Text wurde so definiert, dass er die ganze verfügbare Breite einnimmt. Er wurde oberhalb des Bildteils platziert. Man kann die Textbreite auch kleiner wählen und den Haupttext links oder rechts vom Bildteil einfügen, siehe unten bei Karussell! Diese Darstellung als Katalog zeigt die definierten Bilder und Ihre zugehörigen Texte als Karten, die man anklicken kann, um die gesamte Information angezeigt zu bekommen. Die Anzahl ist nicht begrenzt, für weitere Karten wird eine neue Reihe aufgemacht. Das ist auch zu sehen, wenn Sie Ihr Browserfenster verkleinern, dann springt die Darstellung irgendwann um von fünf auf drei Spalten und schließlich nur auf zwei.",
+      "textalign": "flex-dir-row",
+      "textcells": "0",
+      "imagecells": "12"
+    },
+    { "section": "Karussell",
+      "maintext": "Haupttext: Dieser Text nimmt nur die halbe verfügbare Breite ein. Er wurde rechts neben dem Bildteil platziert. Es stehen weitere Textbreiten zur Auswahl. Man kann den Haupttext auch links vom Bildteil einfügen. Beides wird im Browser nur dann tatsächlich so nebeneinander angezeigt, wenn ausreichend Bildschirmbreite zur Verfügung steht, also auf normalen Computern. Auf Smartphone-Displays werden Text und Bildteil aus Platzgründen immer übereinander angezeigt. Karussell zeigt die Bilder als Dia-Show.",
+      "textalign": "flex-dir-row-reverse",
+      "textcells": "5",
+      "imagecells": "7"
+    },
+    { "section": "Mauerwerk",
+      "maintext": "Haupttext: Beim Mauerwerk werden Bilder und zugehörige Bildbeschreibungen nacheinander auf mehrere Spalten gleichmäßig verteilt. Alle Bildbeschreibungen lassen sich formatieren. Man kann sehen, wie sich die Aufteilung ändert, wenn man das Browserfenster vergrößert oder verkleinert. Mauerwerk eignet sich vermutlich insbesondere für animierende Inhalte.",
+      "textalign": "flex-dir-row",
+      "textcells": "3",
+      "imagecells": "9"
+    },
+    { "section": "Einzelbild",
+      "maintext": "Haupttext: Beim Einzelbild wird nur das allererste definierte Bild angezeigt, alle anderen werden ignoriert. Um alle Bilder zu sehen, kann man Produktgalerie als Darstellung wählen, siehe unten! Wenn gar kein Bild definiert wurde, wird nur der Haupttext angezeigt. Das ist eine Möglichkeit, Texte hier unterzubringen. Die Texte werden mit Hilfe eines grafischen Editors eingegeben und können auch mit Farben, Fontgrößen, Unterstreichungen, Umrandungen etc. formatiert werden. Man kann auch weitere Bilder an beliebiger Stelle und in beliebiger Größe in den Haupttext einfügen und so das Layout der Seite gestalten. Die Textbreite schrumpft mit, wenn das Browser-Fenster verkleinert wird. Das kann man mit diesem Text direkt ausprobieren, auch auf der Tibet-Seite ist es gut zu sehen! Allerdings hat man so nicht mehr die volle Kontrolle über das Layout, aber es erlaubt flüssiges Lesen auch auf kleinen Displays.",
+      "textalign": "flex-dir-row",
+      "textcells": "0",
+      "imagecells": "12"
+    },
+    { "section": "Produktgalerie",
+      "maintext": "Haupttext: Mit Produktgalerie kann man sich durch alle verfügbaren Bilder klicken. Die zugehörigen Titel werden ebenfalls angezeigt, sofern sie vorhanden sind. Die Text-Beschreibungen zu jedem Bild, die man beispielsweise bei Katalog durch Anklicken einzeln nachlesen kann, sind hierbei jedoch nicht zu sehen.",
+      "textalign": "flex-dir-row",
+      "textcells": "3",
+      "imagecells": "9"
+    },
+    { "section": "Kacheln",
+      "maintext": "Haupttext: Die Darstellung mit Kacheln wird auch auf der Reiseländer-Seite benutzt, um Links auf die Seiten der einzelnen Länder herzustellen. Die Definitionen dafür werden auf die gleiche Art und Weise erstellt, wie bei den oben gezeigten Darstellungsarten, allerdings muss hier bei den Bildern an Stelle eines Titels jeweils ein Link auf diejenige Seite eingetragen werden, die bei einem Klick auf die entsprechende Kachel angesprungen werden soll. Diese Seite muss natürlich existieren, damit das klappt! In dieser Vorab-Version wurde deshalb überall nur die Tibet-Seite als Link eingetragen.",
+      "textalign": "flex-dir-row",
+      "textcells": "3",
+      "imagecells": "9"
+    },
+    { "section": "Referenzen",
+      "maintext": "Siehe Menüpunkt Referenzen! Der Vollständigkeit halber soll hier noch erwähnt werden, daß sich oben im Menü unter dem Menüpunkt Referenzen neben den bisher hier aufgeführten Darstellungsarten eine weitere findet, deren Daten auf die gleiche Art und Weise als Kombination von Bildern und zugehörigen Texten eingegeben werden. Wie dort zu sehen können so Referenzen zusammengefasst und formatiert ausgegeben werden.",
+      "textalign": "flex-dir-row",
+      "textcells": "12",
+      "imagecells": "0"
     }
   ]
 }

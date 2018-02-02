@@ -23,3 +23,7 @@ navpage:
     name: LINKS
     url:  Asien.html
     idx: 8
+  -
+    name: HILFE
+    url:  Hilfe.html
+    idx: 9

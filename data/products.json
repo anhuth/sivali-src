@@ -3,33 +3,38 @@
   [
     {
       "MIGX_id":"1",
-      "title":"Rote Stühle",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus. Nullam at nisi sed mi congue vestibulum. Donec efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.",
-      "image":"table-384802_640.jpg"
+      "title":"Bhutan",
+      "description":"Bhutan - Das Land des friedlichen Drachen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus. Nullam at nisi sed mi congue vestibulum. Donec efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.",
+      "descriptionshort":"Bhutan - Das Land des friedlichen Drachen Lorem ipsum dolor sit amet, consectetur adipiscing...",
+      "image":"sivalibhutan.jpg"
     },
     {
       "MIGX_id":"2",
-      "title":"Blaue Stühle",
-      "description":"Vivamus nec scelerisque orci, vel fringilla nisi. Sed dictum, leo in consectetur porttitor, quam nibh aliquet nisi, in pulvinar sapien ante id dui. Aliquam massa nisl, auctor eget nisl in, faucibus gravida lectus. Nullam mattis orci at turpis finibus egestas. Nam vitae lorem accumsan, tempus lectus vitae, rutrum diam. Integer pulvinar placerat magna aliquam scelerisque.",
-      "image":"patio-449432_640.jpg"
+      "title":"Indonesien",
+      "description":"Indonesien -  Inseln unter dem Wind. Vivamus nec scelerisque orci, vel fringilla nisi. Sed dictum, leo in consectetur porttitor, quam nibh aliquet nisi, in pulvinar sapien ante id dui. Aliquam massa nisl, auctor eget nisl in, faucibus gravida lectus. Nullam mattis orci at turpis finibus egestas. Nam vitae lorem accumsan, tempus lectus vitae, rutrum diam. Integer pulvinar placerat magna aliquam scelerisque.",
+      "descriptionshort":"Indonesien - Inseln unter dem Wind",
+      "image":"sivaliindonesien.jpg"
     },
     {
       "MIGX_id":"3",
-      "title":"Apfelbäume",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image":"fruit-1379911_640.jpg"
+      "title":"Tibet",
+      "description":"Tibet - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "descriptionshort":"Tibet - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image":"sivalitibet.jpg"
     },
     {
       "MIGX_id":"4",
-      "title":"Apfelbäume",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image":"fruit-1379911_640.jpg"
+      "title":"Indien",
+      "description":"Indien - Tropische Küsten und exotische Tempelstädte. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "descriptionshort":"Indien - Tropische Küsten und exotische Tempelstädte",
+      "image":"sivaliindien.jpg"
     },
     {
       "MIGX_id":"5",
-      "title":"Rote Stühle",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus. Nullam at nisi sed mi congue vestibulum. Donec efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.",
-      "image":"table-384802_640.jpg"
+      "title":"Myanmar",
+      "description":"Myanmar - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus. Nullam at nisi sed mi congue vestibulum. Donec efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.",
+      "descriptionshort":"Myanmar - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus...",
+      "image":"sivalimyanmar.jpg"
     }
   ]
 }
