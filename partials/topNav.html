@@ -1,0 +1,53 @@
+<section>
+  <div class="title-bar grid-x align-justify" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <div class="cell small-4">
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="cell small-2">
+      <a href="Asien.html"><img src="{{root}}assets/img/union-jack-1027898_40.jpg" alt="Sivali Tours"></a>
+    </div>
+  </div>
+
+  <div class="top-bar grid-x grid-padding-x align-spaced" id="example-menu">
+    <div class="cell medium-2">
+      <a href="index.html"><img src="{{root}}assets/img/sivali_logo_150x84.jpg" alt="Sivali Tours"></a>
+    </div>
+
+    <div class="cell medium-9">
+      <div class="hover-underline-menu" data-menu-underline-from-center>
+        <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+          <li>
+            <a href="Asien.html">REISELÄNDER</a>
+            <ul class="menu">
+              <li><a href="Tibet.html">Tibet</a></li>
+              <li><a href="Tibet.html">Indien</a></li>
+              <li><a href="Tibet.html">Nepal</a></li>
+              <li><a href="Tibet.html">Myanmar</a></li>
+              <li><a href="Tibet.html">Laos</a></li>
+              <li><a href="Tibet.html">China</a></li>
+              <li><a href="Tibet.html">Vietnam</a></li>
+              <li><a href="Tibet.html">Kambodscha</a></li>
+              <li><a href="Tibet.html">Indonesien</a></li>
+              <li><a href="Tibet.html">Bhutan</a></li>
+            </ul>
+          </li>
+          <li><a href="Asien.html">GRUPPEN 2018</a>
+          </li>
+          <li><a href="Asien.html">MASSGESCHNEIDERT</a>
+            <ul class="menu">
+              <li><a href="#">Individualreisen</a></li>
+              <li><a href="#">Gruppenreisen</a></li>
+            </ul>
+          </li>
+          {{#each pagenames.entries}}
+            {{> topNav_tpl}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="cell medium-1 show-for-medium">
+        <a href="Asien.html"><img src="{{root}}assets/img/union-jack-1027898_40.jpg" alt="Sivali Tours"></a>
+    </div>
+  </div>
+</section>

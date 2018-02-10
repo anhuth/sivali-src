@@ -4,6 +4,7 @@ body {
 }
 */
 $prototype-gray: #4a4a4a;
+
 .thumbs {
   justify-content: flex-start;
 }
@@ -159,9 +160,24 @@ button:hover {
     left:28%;
   }
 }
+
 section {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .boxShadow{

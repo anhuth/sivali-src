@@ -1,34 +1,114 @@
 ---
-layout: sivaliNew
+layout: sivaliTemplate
 ---
+{{> topNav}}
 {{> contentHr}}
 <section>
   <div class="grid-x">
     <div class="small-12 cell">
-      <h5>Auf dieser Seite zeige ich beispielhaft verschiedene Darstellungsarten, die demonstrieren sollen, wie Sie Ihre Seite später selbst gestalten können. Dabei lassen sich Bilder von Produkten (Reisen) kombinieren mit zugehörigen Bildtexten und einem übergreifenden Haupttext. Die verschiedenen Darstellungen (Katalog, Karussell, Mauerwerk, Einzelbild, Produktgalerie) präsentieren identische Produktinhalte auf unterschiedliche Art und Weise.</h5>
-      <h5>Darstellungsart, sowie Haupttext, Bilder und Bildtexte wird man später in der MODX-Version grafisch im Backend definieren können. Alle Texte lassen sich mit Farben, Fontgrößen, Unterstreichungen, Umrandungen etc. individuell formatieren. Leider lässt sich das in dieser Vorab-Version nicht demonstrieren.</h5>
+      <h5>On this page, I show examples of different types of presentation, which should demonstrate how you can make your own page later. Here, images of products (travel) can be combined with associated image texts and a comprehensive main text. The various representations (cards, slider, masonry, single image, product gallery) present identical product contents in different ways.</h5>
+      <h5>Display style as well as main text, pictures and picture texts can later be graphically defined in the backend in the MODX version. All texts can be individually formatted with colors, font sizes, underlines, borders etc. Unfortunately, this can not be demonstrated in this pre-release version.
+      If you prefer the Non Modx version without backend, all this can be modified directly in HTML and CSS code.</h5>
     </div>
   </div>
 </section>
 {{> contentHr}}
-{{> contentKatalog}}
+
+<section>
+  <div class="grid-x grid-margin-x">
+    <div class="cell bottomMargin small-12 large-12">
+      <h4>Cards</h4>
+      This text has been defined to take all of the available width. It was placed above the image part. You can also choose the text width smaller and put the main text left or right of the image part, see below at Slider! This presentation shows the defined images and their associated texts as cardss that can be clicked to get all the information displayed in an extra window. The number is not limited, for more cards a new row is opened. You can also see that if you reduce the size of your browser window, the display will eventually jump from five to three columns and finally only two.
+    </div>
+    <div class="cell bottomMargin grid-x align-center small-12 large-12">
+      {{#with products}}
+        {{> contentCards}}
+      {{/with}}
+    </div>
+  </div>
+</section>
 {{> contentHr}}
-{{> contentKarussell}}
+
+<section>
+  <div class="grid-x grid-margin-x flex-dir-row-reverse">
+    <div class="cell bottomMargin small-12 large-5">
+      <h4>Slider</h4>
+      This text takes only half the available width. It was placed to the right of the image part. There are more text widths to choose from. You can also insert the main text to the left of the image part. Both will only be displayed side by side in the browser if there is sufficient screen width available, ie on normal computers. On smartphone displays text and image part are always displayed on top of each other for space reasons. Slider shows the pictures as a slide show.
+    </div>
+    <div class="cell bottomMargin grid-x align-center small-12 large-7">
+      {{#with products}}
+        {{> contentSlider}}
+      {{/with}}
+    </div>
+  </div>
+</section>
 {{> contentHr}}
-{{> contentMauerwerk}}
+
+<section>
+  <div class="grid-x grid-margin-x">
+    <div class="cell bottomMargin small-12 large-3">
+      <h4>Masonry</h4>
+      With Masonry, images and their associated image descriptions are distributed evenly over several columns. All image descriptions can be formatted. You can see how the layout changes when you zoom in or out of the browser window. Masonry is probably especially suitable for animated content.
+    </div>
+    <div class="cell bottomMargin grid-x align-center small-12 large-9">
+      {{#with products}}
+        {{> contentMasonry1}}
+      {{/with}}
+    </div>
+  </div>
+</section>
 {{> contentHr}}
-{{> contentEinzelbild}}
+
+<section>
+  <div class="grid-x grid-margin-x">
+    <div class="cell bottomMargin small-12 large-8">
+      <h4>Single</h4>
+      With Single, only the very first defined image is displayed, all others are ignored. To see all pictures, you can choose Gallery as presentation, see below! If no image has been defined, only the main text will be displayed. This is a way to put texts here, when using Modx. The texts are entered using a graphical editor and can also be formatted with colors, font sizes, underlines, borders etc. You can also insert other images in any position and in any size in the main text and so make the layout of the page. The text width shrinks when the browser window is resized. Without using Modx, you have direct access to HTML Code and can enter Text as you like. Though, you have to be more careful, of course.
+    </div>
+    <div class="cell bottomMargin grid-x align-center small-12 large-4">
+      {{#with products}}
+        {{> contentSingle}}
+      {{/with}}
+    </div>
+  </div>
+</section>
 {{> contentHr}}
-{{> contentProduktgalerie}}
+
+<section>
+  <div class="grid-x grid-margin-x">
+    <div class="cell bottomMargin small-12 large-3">
+      <h4>Gallery</h4>
+      Gallery allows to click through all available pictures. The corresponding titles are also displayed, if they exist. However, the text descriptions for each picture, which can be read individually by clicking on Cards, can not be seen here.
+    </div>
+    <div class="cell bottomMargin grid-x align-center small-12 large-9">
+      {{#with products}}
+        {{> contentGallery}}
+      {{/with}}
+    </div>
+  </div>
+</section>
 {{> contentHr}}
-{{#with sidebar.entries.[6]}}
-  {{>upperPart}}
-{{/with}}
-{{> contentKacheln}}
+
+<section>
+  <div class="grid-x grid-margin-x">
+    <div class="cell bottomMargin small-12 large-3">
+      <h4>ImageGrid</h4>
+      ImageGrid is also used on the Reiseländer page to link to the pages of each country. The definitions for this are created in the same way as for the display types shown above, but here, instead of a title, a link must be entered to the page that is to be jumped to when clicking on the corresponding image. Of course, this page must exist for this to work! In this pre-release version, therefore, only the Tibet page was entered everywhere as a link.
+    </div>
+    <div class="cell bottomMargin grid-x align-center small-12 large-9">
+      {{#with ImageGriddata}}
+        {{> contentImageGrid}}
+      {{/with}}
+    </div>
+  </div>
+</section>
 {{> contentHr}}
-{{#with sidebar.entries.[7]}}
-  {{>upperPart}}
-{{/with}}
+
+<section>
+  <div class="grid-x grid-margin-x">
+    <div class="cell bottomMargin small-12 large-12">
+      <h4>References</h4>
+      See menu item Referenzen! For the sake of completeness, it should be mentioned here that under menu item Referenzen in top menu, there is another presentation besides the ones listed so far, the data of which are entered in the same way as a combination of images and associated texts. As seen there, references can be presented in formatted way.
     </div>
   </div>
 </section>

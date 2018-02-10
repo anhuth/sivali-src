@@ -1,7 +1,12 @@
 ---
-layout: sivaliNew
+layout: sivaliTemplate
 ---
-{{> contentHeroRef}}
+{{> topNav}}
+{{#with TopSliderRef}}
+  {{> contentHero}}
+{{/with}}
 {{> contentHr}}
-{{> contentRef}}
+{{#with references}}
+  {{> contentReferences}}
+{{/with}}
 {{> contentHr}}

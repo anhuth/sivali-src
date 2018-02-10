@@ -1,6 +1,4 @@
-{{#with sidebar.entries.[2]}}
-  {{>upperPart}}
-{{/with}}
+
         <div class="orbit" role="region" aria-label="Favorite Art Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
           <div class="orbit-wrapper">
             <div class="orbit-controls">
@@ -8,7 +6,7 @@
               <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
             </div>
             <ul class="orbit-container">
-              {{#each products.product}}
+              {{#each entries}}
                 <li class="orbit-slide">
                   <figure class="orbit-figure">
                     <img class="orbit-image" src="{{root}}assets/img/{{image}}" alt="{{title}}">
@@ -19,15 +17,14 @@
             </ul>
 
             <nav class="orbit-bullets">
-              {{#each products.product as |product runId|}}
-                <button class="is-active" data-slide="{{runId}}"><span class="show-for-sr">{{runId}}. slide details</span></button>
+              {{#each entries as |entries runId|}}
+                {{#if runId}}
+                  <button data-slide="{{runId}}"><span class="show-for-sr">{{runId}}. slide details</span></button>
+                {{else}}   {{!-- Set first one active --}}
+                  <button class="is-active" data-slide="{{runId}}"><span class="show-for-sr">{{runId}}. slide details</span></button>
+                {{/if}}
               {{/each}}
             </nav>
             <br />
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-<!-- </div> -->
-</section>

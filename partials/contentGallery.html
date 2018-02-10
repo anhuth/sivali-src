@@ -1,20 +1,15 @@
-{{#with sidebar.entries.[5]}}
-  {{>upperPart}}
-{{/with}}
+
       <div class="cell">
-{{#with products.product.[0]}}
+      {{#with entries.[0]}}
         <img id="main-product-image" data-actualid="0" src="{{root}}assets/img/{{image}}" alt="Erstes Bild">
         <h4 id="main-product-title" class="text-center">{{title}}</h4>
-{{/with}}
+      {{/with}}
 
         <ul class="menu align-center">
-          {{#each products.product as |product i|}}
+          {{#each entries as |entries i|}}
             <li>
               <a class="sim-thumb" id="img{{i}}" data-id="{{i}}" data-image="{{root}}assets/img/{{image}}"><img src="{{root}}assets/img/{{image}}" alt="{{title}}"></a>
             </li>
           {{/each}}
         </ul>
       </div>
-    </div>
-  </div>
-</section>

@@ -1,0 +1,16 @@
+
+    <div class="grid-y">
+      {{#with entries.[0]}}
+        {{#if title}}
+          <div class="cell card-divider" style="color: #4a4a4a;">
+            {{title}}
+          </div>
+        {{/if}}
+        <div class="cell">
+          <img id="main-product-image" data-actualid="0" src="{{root}}assets/img/{{image}}" alt="Erstes Bild">
+        </div>
+        <div class="cell">
+          {{description}}
+        </div>
+      {{/with}}
+      </div>

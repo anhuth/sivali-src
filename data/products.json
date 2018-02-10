@@ -1,10 +1,10 @@
 {
-  "product":
+  "entries":
   [
     {
       "MIGX_id":"1",
       "title":"Bhutan",
-      "description":"Bhutan - Das Land des friedlichen Drachen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget scelerisque rhoncus. Nullam at nisi sed mi congue vestibulum. Donec efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.",
+      "description":"",
       "descriptionshort":"Bhutan - Das Land des friedlichen Drachen Lorem ipsum dolor sit amet, consectetur adipiscing...",
       "image":"sivalibhutan.jpg"
     },

@@ -1,11 +1,9 @@
-{{#with sidebar.entries.[3]}}
-  {{>upperPart}}
-{{/with}}
+
           <div class="masonry-css">
-            {{#each products.product}}
+            {{#each entries}}
               <div class="masonry-css-item">
                 <img src="{{root}}assets/img/{{image}}" alt="{{title}}">
-{{!--            <div>{{description}}</div> ersetzt durch --}}
+{{!--            <div>{{description}}</div>    ersetzt durch --}}
 
                 {{#ifequal title "Indien"}}
                   <h4>Indien - Tropische Küsten und exotische Tempelstädte</h4>
@@ -20,7 +18,3 @@
               </div>
             {{/each}}
           </div>
-        </div>
-      </div>
-    <!-- </div> -->
-</section>

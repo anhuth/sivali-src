@@ -1,0 +1,20 @@
+<section>
+  <div class="featured-testimonials-section">
+    <div class="grid-x">
+      <h1>Einige Kommentare Reisender</h1>
+    </div>
+    <div class="featured-testimonials grid-x">
+    {{#each entries}}
+      <div class="small-12 medium-6 cell">
+        <div class="testimonial">
+          <p class="featured-testimonials-quotation">{{description}}</p>
+        </div>
+        <div class="testimonial-slide-author-container align-spaced">
+          <img class="profile-pic hide-for-small-only" src="{{root}}assets/img/references/{{image}}">
+          <p class="testimonial-slide-author-info">{{title}}<br><i class="subheader">{{shortdescription}}</i></p>
+        </div>
+      </div>
+    {{/each}}
+    </div>
+  </div>
+</section>
